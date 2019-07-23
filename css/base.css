@@ -1,0 +1,156 @@
+@charset "utf-8";
+/*框架 基础类*/
+/**/
+html,body,#page{height: 100%;overflow: hidden;}
+body{-webkit-touch-callout: none;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+.line{height: 90%;width: 1px !important;background-color: #E2E3E4;border: none !important;}
+/*page*/
+#page{background: url(../themes/default/img/bg.jpg) no-repeat top center;background-size: cover auto;position: relative;display: -none;}
+/*desktop*/
+#desktop{padding: 5px 0 0 0;}
+#desktop li{width: 75px;min-height: 53px;max-height: 75px;border: 1px solid transparent;margin: 0 1px 27px 0;color: #fff;text-align: center;}
+#desktop li img{width: 35px;height: 35px;display: block;margin: 0 auto;}
+#desktop li p{padding: 0 1px;word-break: break-all;overflow: hidden;text-overflow: ellipsis;word-break: break-all;-webkit-box-orient:vertical;-webkit-line-clamp:2;display: -webkit-box}
+#desktop li:hover{background-color: rgba(255,255,255,.3);border: 1px solid rgba(255,255,255,.6);}
+#desktop li.active{background-color: rgba(255,255,255,.5);border: 1px solid rgba(255,255,255,.65);z-index: 1;}
+
+/*file-explorer*/
+.file-explorer{width: 1200px;height: 580px;border: 1px solid #958577;background-color: #C3AE9B;position: absolute;top: 50px;left: 100px;padding: 0 7px 7px;}
+.file-explorer-unactive{background-color: #EBEBEB;border: 1px solid #D3D3D3;}
+.file-explorer-tiitle{height: 29px;line-height: 29px;color: #282828;text-align: center;font-size: 14px;cursor: default;}
+.file-explorer-tiitle li{float: left;width: 26px;height: 20px;font-size: 16px;margin-left: 1px;line-height: 20px;}
+.file-explorer-tiitle li:hover{background-color: #3665b3;color: #fff;}
+.file-explorer-tiitle li.active{width: 45px;color: #fff;background-color: #C75050;}
+.file-explorer-content{border: 1px solid #A69484;background-color: #fff;width: 100%;height: 551px}
+.file-explorer-toolbar{height: 134px;border-bottom: 1px solid #dadbdc;}
+.file-explorer-menu{height: 26px;border-bottom: 1px solid #dadbdc;}
+.file-explorer-menu ul{position: relative;top: -2px;}
+.file-explorer-menu li{float: left;width: 50px;border-left: 1px solid #fff;border-right: 1px solid #fff;border-top: 1px solid #fff;border-bottom: 1px solid #dadbdc;height: 25px;line-height: 25px;text-align: center;margin-right: 1px;}
+.file-explorer-menu li.active{border-left: 1px solid #dadbdc;border-right: 1px solid #dadbdc;border-top: 1px solid #dadbdc;border-bottom: 1px solid #F5F6F7;background-color: #F5F6F7;}
+.file-explorer-menu-cont{background-color: #F5F6F7;height: 107px;}
+.file-explorer-menu-cont li{float: left;}
+.file-explorer-menu-cont li p{text-align: center;clear: both;color: #929292;}
+/*file-explorer 未激活状态*/
+.file-explorer-unactive .file-explorer-content{border: 1px solid #DADADA;}
+.file-explorer-unactive .file-explorer-tiitle li.active{background-color: #BCBCBC;}
+/*file-explorer-剪切板*/
+.file-explorer .shear_plate{width: 195px;}
+.shear_plate_left{width: 89px;padding: 4px 0 0 6px;}
+.shear_plate_left div,.organize_list div,.new_built_left div,.open_left div{float: left;width: 42px;height: 78px;text-align: center;border: 1px solid transparent;}
+.shear_plate_left i,.new_built_left i,.open_left i{display: block;width: 30px;height: 30px;margin: 2px auto 8px;background-image: url(../img/icon/iocn2.png);}
+.shear_plate_left i{background-position: -11px -8px;}
+.shear_plate_right,.new_built_right,.open_right{padding: 4px 0 0 0;}
+.shear_plate_right{width: 100px;}
+.shear_plate_right div,.new_built_right div,.select_list div,.open_right div{height: 20px;line-height: 20px;border: 1px solid transparent;padding: 0 2px;display: inline-block;*display: inline;*zoom:1;}
+.shear_plate_right i,.new_built_right i,.open_right i,.select_list i{display: block;width: 16px;height: 16px;float: left;margin: 2px 3px 0 0;background-image: url(../img/icon/iocn2.png);}
+.shear_plate_right i{background-position: -91px -11px;}
+.shear_plate_left div:hover,.shear_plate_right div:hover,.new_built_left div:hover,.new_built_right div:hover,.select_list div:hover,.open_left div:hover,.open_right div:hover,.organize_list div:hover{background-color: rgba(164,205,248,.3);border: 1px solid #A4CDF8;}
+/*file-explorer-组织*/
+.file-explorer .organize{width: 188px;}
+.organize_list,.open_left,.select_list,.new_built_left{padding: 4px 0 0 4px;}
+.organize_list i{display: block;width: 30px;height: 33px;background: url(../img/icon/iocn2.png) -206px -8px;margin: 2px auto 8px;}
+/*file-explorer-新建*/
+.file-explorer .new_built{width: 138px;}
+.new_built_left i{background-position:  -390px -8px;}
+.new_built_right{width: 90px;}
+.new_built_right i{background-position: -429px -8px;}
+/*file-explorer-打开*/
+.file-explorer .open{width: 128px;}
+.open_left i{background-position: -528px -10px;}
+.open_right{width: 80px;}
+.open_right i{background-position: -566px -11px;}
+/*file-explorer-选择*/
+.file-explorer .select{width: 88px;}
+.select_list i{background-position: -651px -8px;}
+/*file-explorer-path*/
+.file-explorer-path{height: 37px;}
+.file-explorer-path-btn{width: 108px;}
+.file-explorer-path-btn li{float: left;width: 23px;height: 23px;margin: 7px 2px 0;}
+.file-explorer-path-btn i{display: block;width: 20px;height: 20px;background: url(../img/icon/icon3.png) -4px -2px;margin: 1.5px;}
+.file-explorer-path-cont{width: 966px;border: 1px solid #D9D9D9;height: 21px;margin: 7px 0;}
+.file-explorer-path-cont ul{height: 21px;}
+.file-explorer-path-cont li{float: left;display: inline-block;*display: inline;*zoom:1;height: 19px;border: 1px solid transparent;}
+.file-explorer-path-cont em{display: block;width: 15px;height: 19px;background: url(../img/icon/icon3.png) no-repeat -124px -1px;float: right;border-left: 1px solid transparent;}
+.file-explorer-path-cont span{display: inline-block;*display: inline;*zoom:1;height: 19px;margin: 0 3px;}
+.file-explorer-path-cont-root span{display: block;width: 19px;height: 19px;background: url(../img/icon/icon3.png) no-repeat -102px -1px;float: left;}
+.file-explorer-path-cont li:hover,.file-explorer-path-cont-refresh i:hover{background-color: rgba(164,205,248,.3);border: 1px solid #A4CDF8;}
+.file-explorer-path-cont li:hover em{border-left: 1px solid #A4CDF8;}
+.file-explorer-path-cont-refresh i{display: block;float: left;width: 19px;height: 19px;background: url(../img/icon/icon2.png) 5px -1px;border: 1px solid transparent;}
+.file-explorer-path-search{width: 98px;border: 1px solid #D9D9D9;margin: 7px 12px 7px 0;height: 21px;}
+.file-explorer-path-search input{width: 98px;border: none;height: 21px;color: #6D6D6D;padding-left: 9px;background: url(../img/icon/icon2.png) right center;}
+/*file-explorer-main*/
+.file-explorer-main{height: 356px;}
+.file-explorer-main-list{width: 170px;border-right: 1px solid #F6F6F6;height: 350px;overflow-y: auto;overflow-x: hidden;padding-top: 6px;}
+.file-explorer-main-list li{height: 21px;line-height: 21px;border: 1px solid transparent;color: #000;margin: 0 1px;width: 164px;padding-left: 8px;}
+.file-explorer-main-list i{display: block;width: 16px;height: 16px;float: left;margin: 2.5px 5px 2.5px 0;}
+.file-explorer-main-list i img{width: 100%;height: 100%;}
+.file-explorer-main-list em{display: block;width: 6px;height: 9px;background: url(../img/icon/icon6.png) no-repeat;float: left;margin: 6px 4px 0 0;}
+.file-explorer-main-list em.unfold{background-position: 0 -11px;}
+.file-explorer-main-list q{float: left;}
+.file-explorer-main-list li.active,.file-explorer-main-list li:hover,.file-explorer-main-cont li:hover{background-color: rgba(164,205,248,.3);border: 1px solid #70BFE6;}
+.file-explorer-main-cont{padding: 15px;width: 718px;height: 326px;overflow-x: hidden;overflow-y: auto;}
+.file-explorer-main-cont li{float: left;text-align: center;margin: 0 4px 15px;border: 1px solid transparent;}
+.file-explorer-main-cont li.active{background-color: rgba(164,205,248,.6);border: 1px solid #66A7E6;}
+.file-explorer-main-cont li.focus{border: 1px solid #66A7E6;}
+.file-explorer-main-cont li.focus:hover{background-color: rgba(152,187,224,.75);}
+.file-explorer-main-cont li.blur{border: 1px solid #DDDDDD;background: #F6F6F6;}
+.file-explorer-main-cont i{display: block;width: 86px;height: 86px;margin: 0 auto;}
+.file-explorer-main-cont i img{display: block;width: 100%;height: 100%;}
+.file-explorer-main-info{width: 252px;height: 350px;border-left: 1px solid #F6F6F6;padding: 6px 0 0 24px;}
+.file-explorer-main-info h4{font-weight: 500;font-size: 16px;line-height: 26px;}
+.file-explorer-main-info img{margin-bottom: 5px;}
+.file-explorer-main-info p{color: #5A6779;}
+.file-explorer-main-info li{height: 18px;line-height: 18px;color: #1E395B;}
+.file-explorer-main-info li span{width: 86px;display: inline-block;*display: inline;*zoom:1;color: #5A6779;}
+/*file-explorer-info*/
+.file-explorer-info{height: 23px;line-height: 23px;padding: 0 4px 0 14px;}
+.file-explorer-info span{color: #1e395b;}
+.file-explorer-info-icon i{display: block;width: 21px;height: 21px;background: url(../img/icon/icon4.png) no-repeat 2px 3px;float: left;border: 1px solid transparent;}
+.file-explorer-info-icon i:hover,.file-explorer-info-icon i.active{background-color: rgba(164,205,248,.3);border: 1px solid #A4CDF8;}
+/*context-menu*/
+.context-menu{width: 192px;border: 1px solid #969696;background-color: #EFEFEF;position: fixed;top: 100px;left: 100px;z-index: 99999;display: none;}
+.context-menu li{height: 28px;line-height: 28px;color: #000;}
+.context-menu i{display: block;width: 28px;height: 26px;float: left;background: url(../img/icon/icon7.png) no-repeat 2px -78px;border: 1px solid transparent;}
+.context-menu span{display: block;float: left;height: 26px;width: 156px;border: 1px solid transparent;border-left: 1px solid #D6D6D6;padding: 0 0 0 4px;}
+.context-menu  li.disabled{color: #6C6C6C;}
+.context-menu b,.context-menu-desktop b{width: 0;height: 0;line-height: 0;border-width: 4px;border-color: transparent transparent transparent #000;border-style: dashed dashed dashed solid;float: right;margin: 8px 2px 0 0;}
+.context-menu li:hover i,.context-menu-desktop li:hover i{background-color: rgba(164,205,248,.3);border-top: 1px solid #A4CDF8;border-left: 1px solid #A4CDF8;border-bottom: 1px solid #A4CDF8;}
+.context-menu li:hover span,.context-menu-desktop li:hover span{background-color: rgba(164,205,248,.3);border-top: 1px solid #A4CDF8 !important;border-right: 1px solid #A4CDF8;border-bottom: 1px solid #A4CDF8 !important;}
+.context-menu  li.disabled:hover i{background-color: #E0E0E0;border-top: 1px solid #ADADAD;border-left: 1px solid #ADADAD;border-bottom: 1px solid #ADADAD;}
+.context-menu  li.disabled:hover span{background-color: #E0E0E0;border-top: 1px solid #ADADAD !important;border-right: 1px solid #ADADAD;border-bottom: 1px solid #ADADAD !important;}
+span.br{border-top: 1px solid #D6D6D6 !important;}
+/*context-menu-desktop*/
+.context-menu-desktop{width: 328px;border: 1px solid #969696;background-color: #EFEFEF;position: fixed;z-index: 9999;top: 50px;left: 100px;display: none;}
+.context-menu-desktop li{height: 30px;line-height: 30px;}
+.context-menu-desktop i{display: block;width: 28px;height: 28px;float: left;border: 1px solid transparent;background: url(../img/icon/icon8.png) no-repeat -1px 0;}
+.context-menu-desktop span{display: block;float: left;height: 28px;border: 1px solid transparent;border-left: 1px solid #D6D6D6;padding: 0 0 0 4px;width: 292px;}
+/*boot*/
+.boot{width: 100%;height: 100%;background: #000;position: fixed;top: 0;left: 0;}
+.logo{width: 113px;height: 114px;position: absolute;left: 50%;top: 50%;margin-left: -56.5px;margin-top: -107px;}
+.loading{width: 32px;height: 32px;position: absolute;left: 50%;top: 50%;margin-left: -16px;margin-top: 76px;}
+/*navbar*/
+#navbar{height: 40px;width: 100%;position: fixed;bottom: 0;left: 0;background-color: rgba(0,0,0,.5);z-index: 9999;}
+.navbar-icon li{width: 60px;height: 38px;float: left;margin: 0 2px 1px;border: 1px solid transparent;}
+.navbar-icon li.active{border: 1px solid rgba(255,255,255,.6);background-color: rgba(255,255,255,.5);}
+.navbar-icon li.open{border: 1px solid rgba(255,255,255,.6);background-color: rgba(255,255,255,.26);}
+.navbar-icon li.hover{background: url(../img/navbar-li-bg.png) no-repeat center bottom;background-size: cover;}
+.navbar-icon li.active:hover,.navbar-icon li.open:hover{border: 1px solid rgba(255,255,255,.7);background-color: rgba(255,255,255,.6);}
+.navbar-icon li img{width: 28px;height: 28px;display: block;margin: 5px auto;position: relative;z-index: 3;}
+.start{background: url(../img/icon/icon.png) no-repeat center;}
+/*navbar-右侧状态栏*/
+.right-icon li{float: left;text-align: center;color: #fff;line-height: 20px;width: 28px;margin-left: 1px;}
+.right-icon li.right-icon-item:hover{background: url(../img/navbar-li-bg1.png) no-repeat center bottom;background-size:  contain;}
+.right-icon li i{display: block;width: 16px;height: 16px;background: url(../img/icon/icon1.png) no-repeat;margin: 12px auto;}
+.right-icon-item5 i{background-position: 0 -16px !important;}
+.right-icon-item4 i{background-position: 0 -30px !important;}
+.right-icon-item3 i{background-position: 0 -44px !important;}
+.right-icon-item2 i{background-position: 0 -59px !important;}
+.right-icon-item1 i{background-position: 0 -75px !important;}
+/*rect*/
+#rect{border: 1px dotted #fb8023;position: absolute;}
+.rect-file{border: 1px solid #3399ff;background-color: rgba(51,153,255,.5);}
+
+
+
+
+

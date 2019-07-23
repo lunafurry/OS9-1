@@ -1,0 +1,60 @@
+@charset "utf-8";
+html,body,div,ul,ol,li,p,span,i,em,strong,h1,h2,h3,h4,h5,h6,small,b,dl,dt,dd,a{margin: 0;padding: 0}
+a{outline: none} 
+img{border: none}
+body{background: #fff}
+li{list-style: none}
+a,a:hover {text-decoration: none;color: #333;}
+a:active {star:expression(this.onFocus=this.blur());}/*取消a标签点击后的虚线框*/
+input:-moz-placeholder,textarea:-moz-placeholder {color: #ccc;}
+input::-moz-placeholder,textarea::-moz-placeholder {color: #ccc;}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder {color: #ccc;}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {color: #ccc;}
+/*可选*/
+sub,sup {font-size: 83%}
+a,button {cursor: pointer}
+label,summary {cursor: default}
+q:after,q:before {content: none}
+textarea {overflow: auto;resize: none}
+code,kbd,pre,samp {font-family: inherit}
+caption,th {text-align: left;font-weight: 400}
+abbr,body,fieldset,html,iframe,img {border: 0}
+address,cite,dfn,em,i,var {font-style: normal}
+button[disabled],input[disabled] {cursor: default}
+table {border-collapse: collapse;border-spacing: 0}
+body,button,input,keygen,legend,select,textarea {outline: 0}
+img {image-rendering: optimizeQuality;-ms-interpolation-mode: bicubic}
+input,select,textarea {font-family: inherit;font-size: inherit;font-weight: inherit}
+button,input[type=button],input[type=reset],input[type=submit] {cursor: pointer;-webkit-appearance: button}
+/*tool*/
+.hide{display: none}
+.block{display: block}
+.tal{text-align: left}
+.tar{text-align: right}
+.tac{text-align: center}
+.vat{vertical-align: top}
+.vam{vertical-align: middle}
+.fl{float: left;display: inline}
+.fr{float: right;display: inline}
+.clear-fix{zoom: 1;clear: both}
+.inline{display: inline-block;*display:inline;*zoom:1}
+.clear-fix:after{content: '';display: block;height: 0;visibility: hidden;clear: both}
+.ell{overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;white-space: nowrap}
+.ell2{overflow: hidden;text-overflow: ellipsis;word-break: break-all;-webkit-box-orient:vertical;-webkit-line-clamp:2;display: -webkit-box}
+/*H5*/
+address,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display: block}
+/*box-sizing*/
+/**,*:after,*:before {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: content-box;box-sizing: border-box}*/
+/*隐藏滚动轴*/
+/*body::-webkit-scrollbar{width:0px;}*/
+/*禁止选择文字*/
+/** {-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}*/
+/*预定义*/
+.container{width: 1230px;margin: 0 auto;height: 100%}
+.auto_height{min-height:100px; height:auto!important; height:100px}
+h1{font-size: 22px}
+h2{font-size: 18px}
+h3{font-size: 16px}
+h4{font-size: 14px}
+h5{font-size: 12px}
+body{font: 500 12px/20px "Microsoft Yahei", "微软雅黑", "SimSun", "宋体", "Verdana", "Arial";color: #333}
